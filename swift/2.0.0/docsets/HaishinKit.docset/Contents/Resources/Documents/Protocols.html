@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">HaishinKit 1.9.2 Docs</a> (81% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">HaishinKit</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Actors/IOMixer.html">IOMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/IOStreamRecorder.html">IOStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/IOStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IOAudioCaptureUnit.html">IOAudioCaptureUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IOMediaConverter.html">IOMediaConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IOVideoCaptureUnit.html">IOVideoCaptureUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:10HaishinKit12kASUndefinedAA0C0Vvp">kASUndefined</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/HKDispatchQoS.html">HKDispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/IOAudioUnitError.html">IOAudioUnitError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/IOStreamReadyState.html">IOStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/IOVideoUnitError.html">IOVideoUnitError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/VideoRotatorError.html">VideoRotatorError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:objc(cs)AVAudioTime">AVAudioTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ChromaKeyProcessorble.html">ChromaKeyProcessorble</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/IOStream.html">IOStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/IOStreamObserver.html">IOStreamObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TSReaderDelegate.html">TSReaderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/ASArray.html">ASArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ASTypedObject.html">ASTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ASUndefined.html">ASUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ASXML.html">ASXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ASXMLDocument.html">ASXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IOAudioMixerSettings.html">IOAudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IOAudioMixerTrackSettings.html">IOAudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IOVideoMixerSettings.html">IOVideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IOVideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit8ASObjecta">ASObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit32IOAudioCaptureConfigurationBlocka">IOAudioCaptureConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit32IOVideoCaptureConfigurationBlocka">IOVideoCaptureConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8IOStreamP"></a>
+                    <a name="//apple_ref/swift/Protocol/IOStream" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8IOStreamP">IOStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/IOStream.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IOStream</span> <span class="p">:</span> <span class="kt">Actor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16IOStreamObserverP"></a>
+                    <a name="//apple_ref/swift/Protocol/IOStreamObserver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16IOStreamObserverP">IOStreamObserver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate protocol your app implements to receive capture stream output events.</p>
+
+                        <a href="Protocols/IOStreamObserver.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IOStreamObserver</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16TSReaderDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/TSReaderDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16TSReaderDelegateP">TSReaderDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The interface an MPEG-2 TS (Transport Stream) reader uses to inform its delegates.</p>
+
+                        <a href="Protocols/TSReaderDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TSReaderDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit24NetworkTransportReporterP"></a>
+                    <a name="//apple_ref/swift/Protocol/NetworkTransportReporter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit24NetworkTransportReporterP">NetworkTransportReporter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/NetworkTransportReporter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NetworkTransportReporter</span> <span class="p">:</span> <span class="kt">Actor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit21ChromaKeyProcessorbleP"></a>
+                    <a name="//apple_ref/swift/Protocol/ChromaKeyProcessorble" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit21ChromaKeyProcessorbleP">ChromaKeyProcessorble</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type with a chroma key processorble screen object.</p>
+
+                        <a href="Protocols/ChromaKeyProcessorble.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd"><a href="Actors/ScreenActor.html">@ScreenActor</a></span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ChromaKeyProcessorble</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14ScreenDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/ScreenDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14ScreenDelegateP">ScreenDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An interface a screen uses to inform its delegate.</p>
+
+                        <a href="Protocols/ScreenDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ScreenDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14ScreenRendererP"></a>
+                    <a name="//apple_ref/swift/Protocol/ScreenRenderer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14ScreenRendererP">ScreenRenderer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type that renders a screen object.</p>
+
+                        <a href="Protocols/ScreenRenderer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd"><a href="Actors/ScreenActor.html">@ScreenActor</a></span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ScreenRenderer</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit11VideoEffectP"></a>
+                    <a name="//apple_ref/swift/Protocol/VideoEffect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit11VideoEffectP">VideoEffect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object that apply a video effect.</p>
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <a href="https://developer.apple.com/documentation/coreimage/processing_an_image_using_built-in_filters">https://developer.apple.com/documentation/coreimage/processing_an_image_using_built-in_filters</a>
+
+</div>
+<h2 id='example-code' class='heading'>Example code:</h2>
+<pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">MonochromeEffect</span><span class="p">:</span> <span class="kt">VideoEffect</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">CIFilter</span><span class="p">?</span> <span class="o">=</span> <span class="kt">CIFilter</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"CIColorMonochrome"</span><span class="p">)</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">CIImage</span><span class="p">,</span> <span class="nv">info</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">CIImage</span> <span class="p">{</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">CIFilter</span> <span class="o">=</span> <span class="n">filter</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">image</span>
+        <span class="p">}</span>
+        <span class="n">filter</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="nv">forKey</span><span class="p">:</span> <span class="s">"inputImage"</span><span class="p">)</span>
+        <span class="n">filter</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="kt">CIColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">),</span> <span class="nv">forKey</span><span class="p">:</span> <span class="s">"inputColor"</span><span class="p">)</span>
+        <span class="n">filter</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="nv">forKey</span><span class="p">:</span> <span class="s">"inputIntensity"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">filter</span><span class="o">.</span><span class="n">outputImage</span> <span class="p">??</span> <span class="n">image</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                        <a href="Protocols/VideoEffect.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd"><a href="Actors/ScreenActor.html">@ScreenActor</a></span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">VideoEffect</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit6RunnerP"></a>
+                    <a name="//apple_ref/swift/Protocol/Runner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit6RunnerP">Runner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type that methods for running.</p>
+
+                        <a href="Protocols/Runner.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Runner</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit11AsyncRunnerP"></a>
+                    <a name="//apple_ref/swift/Protocol/AsyncRunner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit11AsyncRunnerP">AsyncRunner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type that methods for running.</p>
+
+                        <a href="Protocols/AsyncRunner.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AsyncRunner</span> <span class="p">:</span> <span class="kt">Actor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2024-08-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IOMixer Actor Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Actor/IOMixer" class="dashAnchor"></a>
+    <a title="IOMixer Actor Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HaishinKit 1.9.2 Docs</a> (81% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HaishinKit</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Actors.html">Actors</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        IOMixer Actor Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actors/IOMixer.html">IOMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/IOStreamRecorder.html">IOStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/IOStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOAudioCaptureUnit.html">IOAudioCaptureUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOMediaConverter.html">IOMediaConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOVideoCaptureUnit.html">IOVideoCaptureUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit12kASUndefinedAA0C0Vvp">kASUndefined</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HKDispatchQoS.html">HKDispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IOAudioUnitError.html">IOAudioUnitError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IOStreamReadyState.html">IOStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IOVideoUnitError.html">IOVideoUnitError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VideoRotatorError.html">VideoRotatorError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)AVAudioTime">AVAudioTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChromaKeyProcessorble.html">ChromaKeyProcessorble</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IOStream.html">IOStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IOStreamObserver.html">IOStreamObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TSReaderDelegate.html">TSReaderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ASArray.html">ASArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ASTypedObject.html">ASTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ASUndefined.html">ASUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ASXML.html">ASXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ASXMLDocument.html">ASXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IOAudioMixerSettings.html">IOAudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IOAudioMixerTrackSettings.html">IOAudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IOVideoMixerSettings.html">IOVideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IOVideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit8ASObjecta">ASObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit32IOAudioCaptureConfigurationBlocka">IOAudioCaptureConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit32IOVideoCaptureConfigurationBlocka">IOVideoCaptureConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IOMixer</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="n">actor</span> <span class="kt">IOMixer</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IOMixer</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AsyncRunner.html">AsyncRunner</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An object that mixies audio and video for streaming.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC6screenAA6ScreenCvp"></a>
+                    <a name="//apple_ref/swift/Property/screen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC6screenAA6ScreenCvp">screen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The offscreen rendering object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd"><a href="../Actors/ScreenActor.html">@ScreenActor</a></span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">screen</span><span class="p">:</span> <span class="kt"><a href="../Classes/Screen.html">Screen</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC14isTorchEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isTorchEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC14isTorchEnabledSbvp">isTorchEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device torch indicating wheter the turn on(TRUE) or not(FALSE).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isTorchEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC30isMultiTrackAudioMixingEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isMultiTrackAudioMixingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC30isMultiTrackAudioMixingEnabledSbvp">isMultiTrackAudioMixingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The feature to mix multiple audio tracks. For example, it is possible to mix .appAudio and .micAudio from ReplayKit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isMultiTrackAudioMixingEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC13sessionPresetSo016AVCaptureSessionE0avp"></a>
+                    <a name="//apple_ref/swift/Property/sessionPreset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC13sessionPresetSo016AVCaptureSessionE0avp">sessionPreset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The sessionPreset for the AVCaptureSession.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC19isMonitoringEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isMonitoringEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC19isMonitoringEnabledSbvp">isMonitoringEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio monitoring enabled or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isMonitoringEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC18audioMixerSettingsAA07IOAudioeF0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/audioMixerSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC18audioMixerSettingsAA07IOAudioeF0Vvp">audioMixerSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio mixer settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">audioMixerSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/IOAudioMixerSettings.html">IOAudioMixerSettings</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC18videoMixerSettingsAA07IOVideoeF0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/videoMixerSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC18videoMixerSettingsAA07IOVideoeF0Vvp">videoMixerSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The video mixer settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">videoMixerSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/IOVideoMixerSettings.html">IOVideoMixerSettings</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC17audioInputFormatsSDys5UInt8VSo13AVAudioFormatCGvp"></a>
+                    <a name="//apple_ref/swift/Property/audioInputFormats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC17audioInputFormatsSDys5UInt8VSo13AVAudioFormatCGvp">audioInputFormats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio input formats.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">audioInputFormats</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span> <span class="p">:</span> <span class="kt">AVAudioFormat</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC17videoInputFormatsSDys5UInt8VSo22CMFormatDescriptionRefaGvp"></a>
+                    <a name="//apple_ref/swift/Property/videoInputFormats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC17videoInputFormatsSDys5UInt8VSo22CMFormatDescriptionRefaGvp">videoInputFormats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The video input formats.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">videoInputFormats</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span> <span class="p">:</span> <span class="kt">CMFormatDescription</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC9frameRateSdvp"></a>
+                    <a name="//apple_ref/swift/Property/frameRate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC9frameRateSdvp">frameRate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The frame rate of a device capture.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">frameRate</span><span class="p">:</span> <span class="kt">Float64</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC16videoOrientationSo014AVCaptureVideoE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/videoOrientation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC16videoOrientationSo014AVCaptureVideoE0Vvp">videoOrientation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the video orientation for stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">videoOrientation</span><span class="p">:</span> <span class="kt">AVCaptureVideoOrientation</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit11AsyncRunnerP9isRunningSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isRunning" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit11AsyncRunnerP9isRunningSbvp">isRunning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isRunning</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC12attachCamera_5track13configurationySo15AVCaptureDeviceCSg_s5UInt8VyAA18IOVideoCaptureUnitCSgcSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/attachCamera(_:track:configuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC12attachCamera_5track13configurationySo15AVCaptureDeviceCSg_s5UInt8VyAA18IOVideoCaptureUnitCSgcSgtYaKF">attachCamera(_:<wbr>track:<wbr>configuration:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attaches the camera device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">attachCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">device</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="p">?,</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10HaishinKit32IOVideoCaptureConfigurationBlocka">IOVideoCaptureConfigurationBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC12videoCapture3forAA07IOVideoE4UnitCSgs5UInt8V_tF"></a>
+                    <a name="//apple_ref/swift/Method/videoCapture(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC12videoCapture3forAA07IOVideoE4UnitCSgs5UInt8V_tF">videoCapture(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the IOVideoCaptureUnit by track.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">videoCapture</span><span class="p">(</span><span class="k">for</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IOVideoCaptureUnit.html">IOVideoCaptureUnit</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC11attachAudio_5track13configurationySo15AVCaptureDeviceCSg_s5UInt8VyAA18IOAudioCaptureUnitCSgcSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/attachAudio(_:track:configuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC11attachAudio_5track13configurationySo15AVCaptureDeviceCSg_s5UInt8VyAA18IOAudioCaptureUnitCSgcSgtYaKF">attachAudio(_:<wbr>track:<wbr>configuration:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attaches the audio device.</p>
+
+<p>You can perform multi-microphone capture by specifying as follows on macOS. Unfortunately, it seems that only one microphone is available on iOS.</p>
+<pre class="highlight swift"><code><span class="kt">FeatureUtil</span><span class="o">.</span><span class="nf">setEnabled</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">multiTrackAudioMixing</span><span class="p">,</span> <span class="nv">isEnabled</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">audios</span> <span class="o">=</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">devices</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">audio</span><span class="p">)</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">device</span> <span class="o">=</span> <span class="n">audios</span><span class="o">.</span><span class="nf">removeFirst</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">stream</span><span class="o">.</span><span class="nf">attachAudio</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">device</span> <span class="o">=</span> <span class="n">audios</span><span class="o">.</span><span class="nf">removeFirst</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">stream</span><span class="o">.</span><span class="nf">attachAudio</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">attachAudio</span><span class="p">(</span><span class="n">_</span> <span class="nv">device</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="p">?,</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10HaishinKit32IOAudioCaptureConfigurationBlocka">IOAudioCaptureConfigurationBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC12audioCapture3forAA07IOAudioE4UnitCSgs5UInt8V_tF"></a>
+                    <a name="//apple_ref/swift/Method/audioCapture(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC12audioCapture3forAA07IOAudioE4UnitCSgs5UInt8V_tF">audioCapture(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the IOAudioCaptureUnit by track.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">audioCapture</span><span class="p">(</span><span class="k">for</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IOAudioCaptureUnit.html">IOAudioCaptureUnit</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC15setTorchEnabledyySbF"></a>
+                    <a name="//apple_ref/swift/Method/setTorchEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC15setTorchEnabledyySbF">setTorchEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the device torch indicating wheter the turn on(TRUE) or not(FALSE).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTorchEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">torchEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC16setSessionPresetyySo09AVCaptureeF0aF"></a>
+                    <a name="//apple_ref/swift/Method/setSessionPreset(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC16setSessionPresetyySo09AVCaptureeF0aF">setSessionPreset(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the sessionPreset for the AVCaptureSession.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSessionPreset</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC6append_5trackySo17CMSampleBufferRefa_s5UInt8VtF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:track:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC6append_5trackySo17CMSampleBufferRefa_s5UInt8VtF">append(_:<wbr>track:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends a CMSampleBuffer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The sample buffer to append.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>track</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Track number used for mixing</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC19setVideoOrientationyySo09AVCaptureeF0VF"></a>
+                    <a name="//apple_ref/swift/Method/setVideoOrientation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC19setVideoOrientationyySo09AVCaptureeF0VF">setVideoOrientation(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the video orientation for stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVideoOrientation</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoOrientation</span><span class="p">:</span> <span class="kt">AVCaptureVideoOrientation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC21setVideoMixerSettingsyyAA07IOVideofG0VF"></a>
+                    <a name="//apple_ref/swift/Method/setVideoMixerSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC21setVideoMixerSettingsyyAA07IOVideofG0VF">setVideoMixerSettings(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the video mixier settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVideoMixerSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/IOVideoMixerSettings.html">IOVideoMixerSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC12setFrameRateyySdF"></a>
+                    <a name="//apple_ref/swift/Method/setFrameRate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC12setFrameRateyySdF">setFrameRate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the frame rate of a device capture.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFrameRate</span><span class="p">(</span><span class="n">_</span> <span class="nv">frameRate</span><span class="p">:</span> <span class="kt">Float64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC21setAudioMixerSettingsyyAA07IOAudiofG0VF"></a>
+                    <a name="//apple_ref/swift/Method/setAudioMixerSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC21setAudioMixerSettingsyyAA07IOAudiofG0VF">setAudioMixerSettings(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the audio mixer settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAudioMixerSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/IOAudioMixerSettings.html">IOAudioMixerSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC20setMonitoringEnabledyySbF"></a>
+                    <a name="//apple_ref/swift/Method/setMonitoringEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC20setMonitoringEnabledyySbF">setMonitoringEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the audio monitoring enabled or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMonitoringEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">monitoringEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/setMultiCamSessionEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">setMultiCamSessionEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the AVCaptureMultiCamSession enabled.
+Warning: If there is a possibility of using multiple cameras, please set it to true initially.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC31setMultiTrackAudioMixingEnabledyySbF"></a>
+                    <a name="//apple_ref/swift/Method/setMultiTrackAudioMixingEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC31setMultiTrackAudioMixingEnabledyySbF">setMultiTrackAudioMixingEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the feature to mix multiple audio tracks. For example, it is possible to mix .appAudio and .micAudio from ReplayKit.
+Warning: If there is a possibility of this feature, please set it to true initially.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMultiTrackAudioMixingEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">multiTrackAudioMixingEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC6append_4when5trackySo13AVAudioBufferC_So0G4TimeCs5UInt8VtF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:when:track:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC6append_4when5trackySo13AVAudioBufferC_So0G4TimeCs5UInt8VtF">append(_:<wbr>when:<wbr>track:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends an AVAudioBuffer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">audioBuffer</span><span class="p">:</span> <span class="kt">AVAudioBuffer</span><span class="p">,</span> <span class="nv">when</span><span class="p">:</span> <span class="kt">AVAudioTime</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The audio buffer to append.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>when</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The audio time to append.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>track</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Track number used for mixing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC13configurationyyySo16AVCaptureSessionCKXEKF"></a>
+                    <a name="//apple_ref/swift/Method/configuration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC13configurationyyySo16AVCaptureSessionCKXEKF">configuration(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configurations for the AVCaptureSession.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(tvOS 17.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">configuration</span><span class="p">(</span><span class="n">_</span> <span class="nv">lambda</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">rethrows</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC9addStreamyyxAA8IOStreamRzlF"></a>
+                    <a name="//apple_ref/swift/Method/addStream(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC9addStreamyyxAA8IOStreamRzlF">addStream(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addStream</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="n">some</span> <span class="kt"><a href="../Protocols/IOStream.html">IOStream</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit7IOMixerC12removeStreamyyxAA8IOStreamRzlF"></a>
+                    <a name="//apple_ref/swift/Method/removeStream(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit7IOMixerC12removeStreamyyxAA8IOStreamRzlF">removeStream(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeStream</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="n">some</span> <span class="kt"><a href="../Protocols/IOStream.html">IOStream</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AsyncRunner"></a>
+                <a name="//apple_ref/swift/Section/AsyncRunner" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/AsyncRunner"></a>
+                  <h3 class="section-name"><span>AsyncRunner</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit11AsyncRunnerP12startRunningyyF"></a>
+                    <a name="//apple_ref/swift/Method/startRunning()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit11AsyncRunnerP12startRunningyyF">startRunning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startRunning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit11AsyncRunnerP11stopRunningyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopRunning()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit11AsyncRunnerP11stopRunningyyF">stopRunning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopRunning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2024-08-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
